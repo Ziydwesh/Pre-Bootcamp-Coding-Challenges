@@ -1,9 +1,6 @@
-def convert(seconds):
-    seconds = seconds % (24 * 3600)
-    hour = seconds // 3600
-    seconds %= 3600
-    minutes = seconds // 60
+time = int(input("Enter number:"))
 
-    return "%d:%02d:%02d" % 
+hours = int(time / 60)
+minutes = (time * 60) % 60
 
-print(convert(133)) 
+print("%d hours, %02d minutes" % (hours, minutes))
